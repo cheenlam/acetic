@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/78e6f741f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>沖繩健食醋</title>
+
+
+
+</head>
+
+<body>
+
+    <!-- maintop start -->
+    <div class="maintop" id="maintop"></div>
+
+    <!-- mainbody start -->
+
+    <div class="mainbody">
+        <div>
+            <div><img src="image/main_01.jpg"></div>
+            <div><img src="image/main_02.jpg"></div>
+        </div>
+        <div>
+            <div><img src="image/main_03.jpg"></div>
+            <div><img src="image/main_04.jpg"></div>
+        </div>
+        <div>
+            <div><img src="image/main_05.jpg"></div>
+            <div><img src="image/main_06.jpg"></div>
+        </div>
+    </div>
+
+    <!-- shopping start -->
+    <div class="shopping" id="shopping">
+        <div class="goods">
+            <div class="goods_pic">
+                <h2>青木瓜黑麴醋</h2>
+                <img src="image/produceIMG01.png">
+            </div>
+
+            <div class="goods_txt">
+                <div class="effect">
+                    <h3>天然檸檬酸與氨基酸的效用</h3>
+                    <ul>
+                        <li>疲勞恢復</li>
+                        <li>可分解碳水化合物與脂肪</li>
+                        <li>含有18種類型的必要氨基酸，保持健康和美麗</li>
+                    </ul>
+                </div>
+                <div class="goods_price">
+                    <span>建議售價 <tt>NT</tt></span>
+                    <p id="shoppingPrice_01">1,880</p>
+                </div>
+                <div class="goods_count">
+                    <div>
+                        <p> 購買數量
+                            <br>Quantity
+                        </p>
+                        <button class="updown" id="shoppingLess_01">-</button>
+                        <input type="text" value="1" maxlength="2" id="shoppingInput_01">
+                        <button class="updown" id="shoppingAdd_01">+</button>
+                    </div>
+                    <div>
+                        <button class="buy phone_buy" id="shoppingBuy_01">加入購物車</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="goods">
+            <div class="goods_pic">
+                <h2>青木瓜黑麴醋</h2>
+                <img src="image/produceIMG02.png">
+            </div>
+            <div class="goods_txt">
+                <div class="effect">
+                    <h3>天然檸檬酸與氨基酸的效用</h3>
+                    <ul>
+                        <li>疲勞恢復</li>
+                        <li>可分解碳水化合物與脂肪</li>
+                        <li>含有18種類型的必要氨基酸，保持健康和美麗</li>
+                    </ul>
+                </div>
+                <div class="goods_price">
+                    <span>建議售價 <tt>NT</tt></span>
+                    <p id="shoppingPrice_02"> 1,200</p>
+                </div>
+                <div class="goods_count">
+                    <div>
+                        <p> 購買數量
+                            <br>Quantity
+                        </p>
+                        <button class="updown" id="shoppingLess_02">-</button>
+                        <input type="text" value="1" maxlength="2" id="shoppingInput_02">
+                        <button class="updown" id="shoppingAdd_02">+</button>
+                    </div>
+                    <div>
+                        <button class="buy phone_buy" id="shoppingBuy_02">加入購物車</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- goto start -->
+    <div class="goto" id="goto">
+        <p>前往結帳</p>
+    </div>
+
+
+
+    <!-- list start -->
+    <div class="list" id="list">
+        <table>
+            <caption>
+                <p>購物清單</p>
+                <p class="text_bold">SHOPPING CART</p>
+            </caption>
+            <tr>
+                <th width="5%"></th>
+                <th width="22.5%">商品名稱</th>
+                <th width="22.5%">商品單價</th>
+                <th width="22.5%">選擇數量</th>
+                <th width="22.5%">小 計</th>
+            </tr>
+
+            <tr class="listOne" id="listOne">
+                <td class="listRemove">
+                    <button class="cancel"></button>
+                </td>
+                <td>青木瓜黑醋</td>
+                <td>NT $<span>1,880</span></td>
+                <td>
+                    <div>
+                        <button class="updown less">-</button>
+                        <input type="text" value="0" maxlength="2">
+                        <button class="updown add">+</button>
+                    </div>
+                </td>
+                <td class="text_bold total">NT $<tt>0</tt></td>
+            </tr>
+
+            <tr class="listTwo" id="listTwo">
+                <td class="listRemove">
+                    <button class="cancel"></button>
+                </td>
+                <td>青木瓜黑醋</td>
+                <td>NT $<span>1,200</span></td>
+                <td>
+                    <div>
+                        <button class="updown less">-</button>
+                        <input type="text" value="0" maxlength="2">
+                        <button class="updown add">+</button>
+                    </div>
+                </td>
+                <td class="text_bold total">NT $<tt>0</tt></td>
+            </tr>
+            <tr id="subtotal">
+                <td colspan="4" class="subtotal">
+                    <div id="listTotal">
+                        0
+                    </div>
+                </td>
+                <td>
+                    <button class="buy">確認結帳</button>
+                </td>
+            </tr>
+
+        </table>
+    </div>  
+
+    <!-- listphone start -->
+    <div class="listphone" id="listphone">
+        <div class="listtop">
+            <p class="text_bold">購物清單</p>
+            <p class="text_bold">SHOPPING CART</p>
+        </div>
+        <div class="listbody" id="listbody">
+                
+            <div id="listphoneOne" class="phonemenu">
+                <button class="cancel listphoneRemove"></button>
+                <div class="product">
+                    <h3 class="text_bold">青木瓜黑醋</h3>
+                    <p>單價 NT $<span> 1,880</span></p>
+                </div>
+                <div>
+                    <button class="updown phoneless">-</button>
+                    <input type="text" value="0" maxlength="2">
+                    <button class="updown phoneadd">+</button>
+                </div>
+                <div class="listphoneCount"><tt></tt></div>
+            </div>
+
+            <div id="listphoneTwo" class="phonemenu">
+                <button class="cancel listphoneRemove"></button>
+                <div class="product">
+                    <h3 class="text_bold">青木瓜黑醋</h3>
+                    <p>單價 NT $ <span>1,200</span></p>
+                </div>
+                <div>
+                    <button class="updown phoneless">-</button>
+                    <input type="text" value="0" maxlength="2">
+                    <button class="updown phoneadd">+</button>
+                </div>
+                <div class="listphoneCount"><tt></tt></div>
+            </div>
+
+        </div>
+        <div class="listfoot" id="listfoot" data-listphone_moery="共計NT $">
+            <p>0</p>
+            <button class="buy text_bold">確認結帳</button>
+        </div>
+    </div>
+
+
+    <!-- megtop start -->
+    <div class="msgtop" id="msgtop">
+        <p>結帳付款</p>
+        <p class="text_bold">PAYMENT TERMS</p>
+    </div>
+
+    <!-- message start -->
+    <div class="message">
+
+        <div class="msg">
+            <div>
+                <p>收件人</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>聯絡電話</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>手機號碼</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>聯絡信箱</p>
+                <input type="text">
+            </div>
+            <div class="only">
+                <p>收件地址</p>
+                <div class="msg_add">
+                    <div>
+                        <select name="city">
+                            <option name="city">臺北市</option>
+                            <option name="city">臺中市</option>
+                            <option name="city">臺南市</option>
+                            <option name="city">高雄市</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="area">
+                            <option name="area">文山區</option>
+                            <option name="area">南屯區</option>
+                            <option name="area">東區</option>
+                            <option name="area">西屯區</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg_last">
+                <input type="text">
+            </div>
+        </div>
+
+
+
+        <div class="msg">
+            <div class="msg_way">
+                <p>統一發票</p>
+                <div class="way ticketway">
+                    <div>
+                        <input type="radio" name="1">
+                        <span>二聯式發票</span>
+                    </div>
+                    <div class="wayone">
+                        <input type="radio" name="1">
+                        <span>三聯式發票</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>公司抬頭</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>統一編號</p>
+                <input type="text">
+            </div>
+            <div>
+                <p class="msg_ck">
+                    <input type="checkbox"> 郵寄發票
+                </p>
+
+                <div class="msg_add">
+                    <div>
+                        <select name="city">
+                                <option name="city">臺北市</option>
+                                <option name="city">臺中市</option>
+                                <option name="city">臺南市</option>
+                                <option name="city">高雄市</option>
+                            </select>
+                    </div>
+                    <div>
+                        <select name="area">
+                                <option name="area">文山區</option>
+                                <option name="area">南屯區</option>
+                                <option name="area">東區</option>
+                                <option name="area">西屯區</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg_last">
+                <input type="text">
+            </div>
+        </div>
+
+
+        <div class="msg">
+            <div>
+                <p>付款方式</p>
+                <div class="mag_card">
+                    <input type="radio" name="2">
+                    <span>
+                        <img src="image/pay_icon01.jpg">
+                    </span>
+                    <input type="radio" name="2">
+                    <span>
+                        <img src="image/pay_icon02.jpg">
+                     </span>
+                </div>
+            </div>
+
+
+            <div class="cardnumber">
+                <p>信用卡號</p>
+                <ul>
+                    <li><input type="text" maxlength="4"></li>
+                    <li><input type="text" maxlength="4"></li>
+                    <li><input type="text" maxlength="4"></li>
+                    <li><input type="text" maxlength="4"></li>
+                </ul>
+            </div>
+
+            <div class="only">
+                <p>有效日期</p>
+                <div class="msg_add">
+                    <div>
+                        <select name="month">
+                            <option name="month">1</option>
+                            <option name="month">2</option>
+                            <option name="month">3</option>
+                            <option name="month">4</option>
+                            <option name="month">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name=year ">
+                            <option name=year">2018</option>
+                            <option name=year">2019</option>
+                            <option name=year">2020</option>
+                            <option name=year">2021</option>
+                            <option name=year">2022</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardcode">
+                <p>安全碼</p>
+                <input type="text" maxlength="3">
+                <span>
+                    <img src="image/pay_icon03.png">
+                </span>
+            </div>
+
+            <div class="msg_declare">
+                <div class="msg_ck">
+                    <input type="checkbox">
+                    <p>
+                        我願意遵守<span>服務條款、隱私權政策及個人資料蒐集與使用</span>之規定
+                        <br><tt>寄送說明：商品將於1-2個工作天內出貨，可於出貨後2-5天內收到</tt>
+                    </p>
+                </div>
+            </div>
+
+            <div class="msg_last">
+                <button>確認付款</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mycar start -->
+    <div class="mycar" id="mycar">
+        <div class="cartop" id="cartop">
+            <i class="fas fa-caret-square-up"></i>       
+            購物車 (
+            <span id="mycarCount">0</span>) $
+            <span id="mycarTotal">0</span>
+            
+        </div>
+        <div class="carbody">
+            <div id="carbody">
+                <div id="mycarOne" class="carmenu">
+                    <h3>青木瓜黑麴醋</h3>
+                    <p class="total">
+                        X <tt>0</tt>
+                        <span>
+                        NT$1880
+                    </span>
+                    </p>
+                </div>
+
+                <div id="mycarTwo" class="carmenu">
+                    <h3>青木瓜黑麴醋</h3>
+                    <p class="total">
+                        X <tt>0</tt>
+                        <span>
+                        NT$1200
+                    </span>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <button id="mycarBuy">確認結帳</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- gotop  start-->
+    <div class="gotop" id="gotop">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+    <!-- addshoppingcar start -->
+    <div class="addShoppingCar" id="addShoppingCar">
+        <div>
+            <i class="fas fa-cart-arrow-down"></i>
+            <p>加入購物車</p>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+
+</body>
+
+</html>

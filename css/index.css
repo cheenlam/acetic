@@ -1,0 +1,799 @@
+/* maintop start */
+
+.maintop {
+    width: 100%;
+    height: 700px;
+    background: url(../image/Top.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* mainbody start */
+
+.mainbody div {
+    max-width: 100%;
+    display: flex;
+}
+
+.mainbody img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* shopping start */
+
+.shopping {
+    width: 100%;
+    padding: 0 20px;
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.goods {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.goods_pic {
+    width: 250px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.goods>img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.goods h2 {
+    height: 130px;
+    line-height: 22px;
+    padding: 10px 0;
+    margin: auto 50px;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    border-right: 1px solid #505050;
+    border-left: 1px solid #505050;
+    color: #505050;
+}
+
+.goods_txt {
+    width: calc(100% - 250px);
+    line-height: 25px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #505050;
+}
+
+.goods ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.goods_price {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 20px;
+}
+
+.goods_price p, 
+.goods_price span {
+    font-size: 20px;
+    color: #838383;
+}
+
+.goods_count {
+    line-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.goods_count div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.goods_count input {
+    width: 20px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+}
+
+/* goto start */
+
+.goto {
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #aaa;
+    border-style: dashed;
+    position: relative;
+    transition: 0.3s;
+}
+
+.goto::before {
+    content: '';
+    height: 20px;
+    background: url(../image/arr_icon.jpg) no-repeat center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.goto:hover {
+    transform: scale(1.2);
+}
+
+/* list start */
+
+.list {
+    max-width: 800px;
+    margin: 100px auto;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.list caption {
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.list p:first-child {
+    font-size: 25px;
+}
+
+.list table {
+    width: 100%;
+}
+
+.list tr:first-child {
+    border: 1px solid #000;
+}
+
+.list th {
+    height: 40px;
+}
+
+.list td {
+    height: 90px;
+    text-align: center;
+}
+
+.list input {
+    width: 20px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+}
+
+.list .total {
+    font-size: 20px;
+}
+
+.list div {
+    margin: 0 10px;
+    position: relative;
+}
+
+.subtotal div{
+    text-align: right;
+    font-size: 20px;
+}
+
+.subtotal div::before{
+    content: '共計 NT$';
+    margin-right: 10px;
+}
+.listOne,.listTwo{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+
+
+/* listphone start */
+
+.listphone {
+    width: 100%;
+    padding: 0 20px;
+    margin: 100px 0;
+    font-size: 18px;
+    display: none;
+}
+
+.listtop {
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #D00022;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.listbody div {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.listbody>div:nth-child(even) {
+    background-color: #eee;
+}
+
+.listbody>div:nth-child(odd) {
+    background-color: #fff;
+}
+
+.listbody input {
+    width: 30px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.product p {
+    padding-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.listfoot {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    position: relative;
+}
+
+.listfoot p {
+    padding-left: 90px;
+}
+
+.listfoot button {
+    width: 100%;
+    background-color: #fff;
+    margin-left: 20px;
+    color: #D00022;
+    border: none;
+}
+
+.listfoot::before {
+    content: attr(data-listphone_moery);
+    position: absolute;
+    margin: auto;
+    left: 10px;
+}
+
+#listphoneOne,
+#listphoneTwo{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.listphoneCount tt,
+.listphoneCount{
+    display: none;
+    position: absolute;
+}
+
+
+/* msgtop start */
+
+.msgtop {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.msgtop p:first-child {
+    font-size: 25px;
+}
+
+/* message start */
+
+.message {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.msg {
+    max-width: 900px;
+    font-size: 17px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msg>div {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.msg p {
+    min-width: 100px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.msg input {
+    width: calc(100% - 100px);
+    padding: 0 10px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.msg_last input, 
+.msg_last button {
+    width: 100%;
+}
+
+.msg input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.msg input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.msg_add {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.msg_add div {
+    width:100%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.msg_add select {
+    width: 100%;
+    padding: 0 0 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.msg_add div::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../image/arr_icon.jpg) no-repeat center;
+    pointer-events: none;
+}
+
+.msg_way {
+    min-width: 100%;
+}
+
+.way {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.way div {
+    padding-right: 20px;
+}
+
+.wayone span {
+    position: relative;
+}
+
+.wayone span::before {
+    content: '(請填寫下方開立資訊)';
+    width: 150px;
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 0px;
+    color: #aaa;
+}
+.mag_card{
+    display: flex;
+}
+.mag_card span{
+    margin-right: 30px;
+}
+
+.msg_ck {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.msg_declare p {
+    width: 100%;
+    text-align: left;
+}
+
+.msg_ck p {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.msg_ck span {
+    color: #f00;
+}
+
+.msg_ck tt {
+    color: #aaa;
+}
+
+.cardnumber ul {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.cardnumber input {
+    width: 100%;
+    text-align: center;
+}
+
+.cardnumber li {
+    width: calc( (100% - 100px) / 4);
+    position: relative;
+    margin-left: 15px;
+}
+
+.cardnumber li+li::before {
+    content: '-';
+    position: absolute;
+    left: -10px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.cardcode input {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.cardcode span {
+    position: relative;
+}
+
+.cardcode span::before {
+    content: '卡片背面三位數驗證碼';
+    width: 120px;
+    position: absolute;
+    font-size: 12px;
+    bottom: -15px;
+    left: 0px;
+    color: #aaa;
+}
+
+.msg_last button {
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #D00022;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0);
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.msg_last button:hover {
+    background-color: #D00022;
+    color: #fff;
+}
+
+/* mycar start */
+
+.mycar {
+    width: 250px;
+    padding: 20px;
+    font-size: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.cartop {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.carbody {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    text-align: right;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.carbody h3,
+.carbody p{
+    text-align: center;
+
+}
+.carbody div {
+    margin: 10px 0;
+    border-bottom: 1px solid rgb(245, 179, 117);
+    border-style: dotted;
+}
+.carbody div:nth-last-child(2) {
+    margin-top: 30px;
+    border: none;
+}
+
+.carbody div:last-child {
+    margin-top: 30px;
+    border: none;
+}
+
+.total {
+    line-height: 2em;
+}
+
+.total span {
+    margin-left: 40px;
+}
+
+.carbody button {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #aaa;
+    background-color: rgb(255, 255, 255, 0);
+    transition: 0.3s;
+}
+
+.carbody button:hover {
+    background-color: #f00;
+    color: #fff;
+}
+
+#mycarOne,
+#mycarTwo{
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+#carbody{
+    max-height: 250px;
+    overflow: auto;
+}
+
+.arrow{
+    transform: rotate(180deg)
+}
+
+
+
+/* gotop  start */
+.gotop{
+    padding: 0 10px;
+    font-size: 40px; 
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s;  
+    display: none;
+    z-index: 2; 
+}
+.gotop:hover{
+    opacity: 1;
+}
+
+
+/* addshoppingcar start */
+.addShoppingCar{
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(218, 38, 68);
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+    transition: 0.2s;
+    animation: addlist 0.2s 0s 1 linear;
+    display: none;  
+}
+.addShoppingCar .fas{
+    font-size: 25px;
+}
+
+@keyframes addlist{
+    0%{transform: scale(3);}
+    100%{transform: scale(1);}
+}
+
+
+
+/* ================   共用設定  ================  */
+
+/* finger animation */
+
+.goto:hover, 
+.buy:hover, 
+.goods .fas:hover, 
+.updown:hover,
+ .cancel:hover, 
+ .msg_last button:hover, 
+ select:hover, 
+ .carbody button:hover, 
+ .msg input[type="checkbox"]:hover,
+ .msg input[type="radio"]:hover,
+ .gotop:hover,
+ .cartop{
+    cursor: pointer;
+}
+
+/* lile button */
+
+.buy {
+    width: 110px;
+    height: 45px;
+    font-size: 16px;
+    border: 2px solid #D00022;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0);
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.buy:hover {
+    background-color: #D00022;
+    color: #fff;
+}
+
+.updown {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: #838383;
+}
+
+.updown:hover {
+    color: #D00022;
+}
+
+.cancel {
+    width: 30px;
+    height: 30px;
+    background: url(../image/delBTN.png) no-repeat center;
+    background-position: 0 5px;
+    border: none;
+}
+
+.cancel:hover {
+    background-position: 0 -24px;
+}
+
+/* text bold */
+
+.text_bold {
+    font-weight: bold;
+}
+
+
+/* ================   RWD  設定  ================  */
+
+
+@media only screen and (max-width: 599px) {
+    .phone_buy, .effect {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .mainbody img {
+        width: 300px;
+    }
+    .goods_pic, .goods_txt {
+        width: 100%;
+    }
+    .goods {
+        flex-direction: column;
+    }
+    .list,
+    .mycar{
+        display: none;
+    }
+    .listphone {
+        display: block;
+    }
+    .mainbody div {
+        flex-direction: column;
+    }
+    .mainbody img {
+        width: 100%;
+    }
+    .ticketway{
+        flex-direction: column;
+    }
+    .msg_declare{
+        margin: 20px 0;
+    }
+    .cardnumber p{
+        display: none;
+    }
+    .cardnumber ul{
+        width: 100%;
+    }
+    .cardnumber input{
+        width: calc(100% - 20px / 4);
+    }
+
+}
+
+@media only screen and (max-width: 870px) {
+    .msg div {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .goods_count div {
+        width: 100%;
+        justify-content: flex-start;
+        margin: 10px 0;
+    }
+    .phone_buy {
+        width: 100%;
+    }
+}
+
+
+
