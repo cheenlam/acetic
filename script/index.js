@@ -31,14 +31,14 @@ var scroll = $(window).scroll(function() {
 
 // 加入購物車button點擊事件 - 增加動畫小圖示
 $('#shoppingBuy_01').click(function(){
-    var addlist = $('#addShoppingCar').clone(true).removeAttr('display');
+    var addlist = $('#addShoppingCar').clone(true).css('display','block');
     $('body').prepend(addlist)
     setTimeout(function(){
         addlist.remove()
     },1000)
 });      
 $('#shoppingBuy_02').click(function(){
-    var addlist = $('#addShoppingCar').clone(true).css('display','')
+    var addlist = $('#addShoppingCar').clone(true).css('display','block');
     $('body').prepend(addlist)
     setTimeout(function(){
         addlist.remove()
